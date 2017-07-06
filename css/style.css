@@ -1,6 +1,9 @@
 body,html{
   overflow: hidden;
   font-size: 12px;
+  background-image: url("../images/sky.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #weather{
@@ -8,21 +11,27 @@ body,html{
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-image: url("../images/sky.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+
 }
 form{
-  display: block;
-  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  background: rgba(0,0,0,0.3);
+  border: 3px solid black;
 }
 input{
-  border: 1px solid red;
+  margin-bottom: 20px;
+  height: 30px;
+  width: 150px;
+}
+button{
+  margin-bottom: 20px;
+  height: 30px;
 }
 table{
-  margin-top: 70px;
+  margin-top: 50px;
   background: rgba(0,0,0,0.6);
   color: #fff;
   font-size: 2rem;
