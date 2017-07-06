@@ -1,5 +1,5 @@
 body,html{
-  overflow: hidden;
+  /*overflow: hidden;*/
   font-size: 12px;
   background-image: url("../images/sky.jpg");
   background-size: cover;
@@ -7,12 +7,11 @@ body,html{
 }
 
 #weather{
-  width: 100%;
-  height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   align-items: center;
-
+  justify-content: center;
+  flex-wrap: wrap;
 }
 form{
   display: flex;
@@ -26,15 +25,22 @@ input{
   height: 30px;
   width: 150px;
 }
+#map {
+        height: 300px;
+        width: 300px;
+        margin:30px,0px;
+       }
 button{
   margin-bottom: 20px;
   height: 30px;
 }
 table{
+  margin: 30px;
   margin-top: 50px;
   background: rgba(0,0,0,0.6);
   color: #fff;
   font-size: 2rem;
+
 }
 tr{
   display: flex;
@@ -57,4 +63,58 @@ background: rgba(0,0,0,0.4);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.look{
+  display: none;
+}
+footer{
+  position: absolute;
+  bottom: 1px;
+  height: 60px;
+  background: rgba(0,0,0,0.3);
+  width: 100%;
+  color: #fff;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer ul{
+  display: inline-block;
+}
+footer li{
+  float: left;
+  margin-right: 20px;
+}
+footer p{
+  margin-left: 30px;
+}
+
+footer .face{
+  background-image: url("../images/facebook.png");
+}
+footer .linked{
+  background-image: url("../images/linkedin.png");
+}
+footer .git{
+  background-image: url("../images/git.png");
+}
+
+footer .face:hover{
+  opacity: 0.6;
+  background-image: url("../images/facebook.png");
+}
+footer .linked:hover{
+  opacity: 0.6;
+  background-image: url("../images/linkedin.png");
+}
+footer .git:hover{
+  opacity: 0.6;
+  background-image: url("../images/git.png");
+}
+footer .foot-img{
+  height: 30px;
+  width: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

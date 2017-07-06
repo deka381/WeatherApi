@@ -2,6 +2,7 @@
 <html lang="pl-PL">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CodersLab</title>
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/style.css">
@@ -19,8 +20,26 @@
 <table class="weather">
 
 </table>
-</div>
+<div class="maps">
 
+	<h3 class="look">My Map from google</h3>
+	<div id="map"></div>
+</div>
+</div>
+<footer>
+	<p>
+		&copy; created by Dudzik Konrad 'deka381'
+	</p>
+	<ul>
+		<a href="https://www.facebook.com/konrad.dudzik.71"><li class="face foot-img"></li></a>
+		<a href="https://www.linkedin.com/in/konrad-dudzik"><li class="linked foot-img"></li></a>
+		<a href="https://github.com/deka381"><li class="git foot-img"></li></a>
+
+	</ul>
+</footer>
+	 <script async defer
+	 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbnN3ONdx1MUubu_PYLVrjYQ1dFIyFVWw&callback=initMap">
+	 </script>
 <script src="./js/app.js"></script>
 </body>
 </html>
