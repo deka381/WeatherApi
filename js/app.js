@@ -14,7 +14,6 @@ $(function () {
     event.preventDefault();
     var textInput=inputCiti.val();
     var apiUrl='http://api.apixu.com/v1/current.json?key=6dcad8a6de714b7396a164032170507&q='+textInput;
-    var sup1=$("<sup>");
     function ShowWeather(citis) {
       var iconUrl=citis.current.condition.icon;
       tr=$('<tr>');
@@ -25,12 +24,11 @@ $(function () {
       temp = $('<td><span>').text(citis.current.temp_c).append(st).append(textC);
       cloud=$("<td><span>").text("zachmurzenie: " + citis.current.cloud + " %");
       icon=$('<img>').attr("src",'http://'+iconUrl.substr(2));
-      td.append(icon);
+      temp.append(icon);
       tr.append(cityName);
-      tr.append(cloud);
-      // temp.append(st);
       tr.append(temp);
-      tr.append(td);
+      tr.append(cloud);
+      // tr.append(td);
       table.append(tr);
 
       tr.prev().remove();
