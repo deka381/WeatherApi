@@ -1,69 +1,31 @@
-body {
-    margin: 0 auto;
-    width: 500px;
+*{
+  background-color: green;
 }
 
-.repertuar {
-    border: 1px dotted #4f4f4f;
-    padding: 10px;
-    list-style: none;
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.repertuar li {
-    background-color: #F5F5F5;
-    padding: 10px;
+form{
+  display: block;
 }
-
-.movie h3 {
-    float: left;
-    width: 200px;
-    margin: 0;
+table{
+  margin-top: 100px;
 }
-
-.movie .removeMovie, .movie .editMovie {
-    float: left;
-    width: 80px;
-    margin-left: 10px;
+tr{
+  display: flex;
+  flex-direction: column;
 }
-
-.seans {
-    clear: both;
+td{
+  text-align: center;
+  padding: 30px;
 }
-
-.editable {
-    background-color: white !important;
-    border: 1px solid black;
+img{
+  width: 50px;
+  height: 50px;
 }
-
-.editable h3, .editable p, .editable .edit, .editable .delete {
-    display: none;
-}
-
-.updateMovie {
-    display: none;
-}
-
-.movie_description {
-    clear: both;
-    margin-top: 30px;
-    display: block;
-}
-
-label {
-    display: block;
-    margin-top: 10px;
-}
-
-button {
-    display: block;
-    margin-top: 10px;
-}
-
-#addMovie {
-    margin-top: 20px;
-    background-color: orange;
-    color: white;
-    border: none;
-    padding: 6px 10px;
-    font-size: 16px;
+td{
+  border:1px solid black;
 }
