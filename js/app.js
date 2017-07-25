@@ -38,21 +38,19 @@ $(function () {
 
 
 
-    function initMap(place) {
-
-    
-
-
-      let uluru = {lat: place.location.lat, lng: place.location.lon};
-      let map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 6,
-        center: uluru
-      });
-      let marker = new google.maps.Marker({
-        position: uluru,
-        map: map
-      });
-    }
+    // function initMap(place) {
+    //
+    //   let uluru = {lat: place.location.lat, lng: place.location.lon};
+    //   console.log(place.location.lat);
+    //   let map = new google.maps.Map(document.getElementById('map'), {
+    //     zoom: 6,
+    //     center: uluru
+    //   });
+    //   let marker = new google.maps.Marker({
+    //     position: uluru,
+    //     map: map
+    //   });
+    // }
 
 
 
@@ -63,16 +61,16 @@ $(function () {
 
     function LoadCiti() {
       $.ajax({
-        url:apiUrl
+        url:apiUrl,
       }).done(function (response) {
         ShowWeather(response);
-        initMap(response);
+        // initMap(response);
       }).fail(function (err) {
           console.log("error from loadCity");
       })
     }
     LoadCiti();
-    initMap();
+    // initMap();
 
   })
 
