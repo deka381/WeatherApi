@@ -14,7 +14,7 @@ $(function () {
 
     event.preventDefault();
     let textInput=inputCiti.val();
-    let apiUrl='http://api.apixu.com/v1/current.json?key=6dcad8a6de714b7396a164032170507&q='+textInput;
+    let apiUrl='https://api.apixu.com/v1/current.json?key=6dcad8a6de714b7396a164032170507&q='+textInput;
     divMap.find('h3').removeClass("look");
       function ShowWeather(citis) {
       let iconUrl=citis.current.condition.icon;
