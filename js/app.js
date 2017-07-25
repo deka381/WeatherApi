@@ -40,7 +40,7 @@ $(function () {
 
     function initMap(place) {
 
-    ;
+    
 
 
       let uluru = {lat: place.location.lat, lng: place.location.lon};
@@ -68,7 +68,7 @@ $(function () {
         ShowWeather(response);
         initMap(response);
       }).fail(function (err) {
-
+          console.log("error from loadCity");
       })
     }
     LoadCiti();
