@@ -1,23 +1,23 @@
 
 $(function () {
-  var inputCiti=$("#citiInput");
-  var btn=$(".btn");
-  var table=$(".weather");
-  var divMap = $(".maps");
-  var tr;
-  var cityName;
-  var temp;
-  var icon;
-  var textC;
-  var st;
+  let inputCiti=$("#citiInput");
+  let btn=$(".btn");
+  let table=$(".weather");
+  let divMap = $(".maps");
+  let tr;
+  let cityName;
+  let temp;
+  let icon;
+  let textC;
+  let st;
     btn.on("click",function (event) {
 
     event.preventDefault();
-    var textInput=inputCiti.val();
-    var apiUrl='http://api.apixu.com/v1/current.json?key=6dcad8a6de714b7396a164032170507&q='+textInput;
+    let textInput=inputCiti.val();
+    let apiUrl='http://api.apixu.com/v1/current.json?key=6dcad8a6de714b7396a164032170507&q='+textInput;
     divMap.find('h3').removeClass("look");
       function ShowWeather(citis) {
-      var iconUrl=citis.current.condition.icon;
+      let iconUrl=citis.current.condition.icon;
       tr=$('<tr>');
       td=$('<td>');
       cityName = $('<td><span>').text(citis.location.name);
@@ -43,12 +43,12 @@ $(function () {
     ;
 
 
-      var uluru = {lat: place.location.lat, lng: place.location.lon};
-      var map = new google.maps.Map(document.getElementById('map'), {
+      let uluru = {lat: place.location.lat, lng: place.location.lon};
+      let map = new google.maps.Map(document.getElementById('map'), {
         zoom: 6,
         center: uluru
       });
-      var marker = new google.maps.Marker({
+      let marker = new google.maps.Marker({
         position: uluru,
         map: map
       });
